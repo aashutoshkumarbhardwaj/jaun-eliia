@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html, body{
+   height: 100%;
+   width: 100%;
+
+}
+#page1{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: #bce33a; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+#navpart1{
+    width: 30%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+#navpart1 h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+#navpart2{
+    width: 30%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+#navpart2 button{
+    padding: 15px 18px;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: black;
+    margin: 0 10px;
+    
+
+}
+#navpart2 button:nth-child(1){
+    background-color: transparent;
+    color: black;
+}
+#nav img{
+    height: 70px;
+}
+#content{
+    height: calc(100% - 100px);
+    width: 100%;
+    /* background-color: crimson; */
+    padding-top: 100px;
+
+}
+#content h3{
+    background-color: rgb(106, 238, 106);
+    padding: 8px 12px;
+    width: fit-content;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 17px;
+}
+#content h1{
+        font-size: 70px;
+        text-align: center;
+        margin: 15px 0 ;
+        font-family: "gilroy";
+        line-height: 70px;
+}
+#content h4{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+#content button{
+   
+        padding: 15px 18px;
+        border-radius: 50px;
+        font-size: 17px;
+        font-weight: 600;
+        color: white;
+        border: none;
+        background-color: black;
+        margin: 20px 0px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    
+
+}
+#buttom{
+   height: 380px;
+   width: 100%;
+    /* background-color: rgb(241, 114, 114); */
+    padding: 5px;
+     display: flex;
+     flex-wrap: nowrap;
+     gap: 30px;
+     overflow-x: auto;
+     overflow-y: hidden;
+     position: relative;
+    
+       }
+    #buttom::-webkit-scrollbar{
+      display: none;
+    }
+.elem{
+    position: relative;
+    flex-shrink: 0;
+    height: 100%;
+    width: 320px;
+    background-color: royalblue;
+    border: 2px solid black;
+    border-radius: 20px;
+     /* overflow: hidden; */
+    /* align-items: center;
+    justify-content: center; */
+}
+.elem .textbutton{
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border-radius: 20px 20px 20px 20px; */
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    /* background-color: #d0d023;. */
+    margin-top: 48vh;
+   position: relative;
+   padding: 60px;
+   padding-top: 10px;
+}
+#box{
+    height: 180px;
+    width: 250px;
+    background-color: red;
+    /* padding: 17px; */
+    border-radius: 10px;
+    position: relative;
+    margin: 15px;
+    display: inline-block;
+    /* display: lex; */
+    overflow: hidden;
+}
+#box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: inline-block;
+}
+#page2 h1{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-family: "gilroy";
+    line-height: 70px;
+}
+#boxbuttom{
+    height: 100px;
+    width: 100%;
+    background-color: linear-gradient(to right bottom, #ff105f, #ffad06);
+}
+
+.boxbuttom{
+    height: 60%;
+    width: 100%;
+   background: linear-gradient(transparent, rgba(0, 0, 0, 0.748));
+   position: absolute;
+    buttom: -60%;
+    transition: buttom 0.5s ease  ;
+}
+.box:hover .boxbuttom {
+   buttom: 0;
+}
+
+.box:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
